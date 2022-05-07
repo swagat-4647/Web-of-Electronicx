@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="purchaselogin.css">
+    <script src="https://kit.fontawesome.com/ae4f3f8374.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Bungee+Hairline&family=Bungee+Outline&family=Julius+Sans+One&family=Major+Mono+Display&family=Press+Start+2P&family=Source+Code+Pro:wght@500&family=Space+Mono:wght@700&family=Tenali+Ramakrishna&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>WEB OF ELECTRONICX | LOGIN</title>
+</head>
+<body>
+    <section id="detail">
+        <div id="form-box">
+            <div id="button-box">
+                <div id="btn"></div>
+                <button id="loginbtn" class="toggle-btn" onclick="login()">LOGIN</button>
+                <button id="registerbtn" class="toggle-btn" onclick="register()">REGISTER</button>
+            </div>
+            <form action="" id="logininput" class="input-section">
+                LOGIN DETAILS<br><br><br>
+                <div class="logins" style="display: flex; justify-content: center; width: 100%;">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email_input" placeholder="ENTER YOUR EMAIL-ID">
+                </div><br>
+                <div class="logins" style="display: flex; justify-content: center; width: 100%;">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password_input" placeholder="ENTER YOUR PASSWORD">
+                </div><br>
+                <button id="login-btn">LOGIN</button>
+            </form>
+            <form action="" id="registerinput" class="input-section">
+                REGISTER NEW USER<br><br>
+                <div class="regist" style="display: flex; justify-content: center; width: 100%;">
+                    <i class="far fa-user"></i>
+                    <input type="text" id="name_input" placeholder="ENTER YOUR FULL NAME">
+                </div><br>
+                <div class="regist" style="display: flex; justify-content: center; width: 100%;">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email_input" placeholder="ENTER YOUR EMAIL-ID">
+                </div><br>
+                <div class="regist" style="display: flex; justify-content: center; width: 100%;">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password_input" placeholder="ENTER YOUR PASSWORD">
+                </div><br>
+                <button id="register-btn">REGISTER</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        var x=document.getElementById("logininput");
+        var y=document.getElementById("registerinput")
+        var z=document.getElementById("btn");
+        function login(){
+            x.style.left="2%";
+            y.style.left="100%";
+            z.style.left="0%";
+        }
+        function register(){
+            x.style.left="-100%";
+            y.style.left="5%";
+            z.style.left="50%";
+        }
+    </script>
+</body>
+</html>
